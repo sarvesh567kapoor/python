@@ -2,7 +2,7 @@
 ## Overview
 This Python Docker image is built for [Azure Web App on Linux](https://docs.microsoft.com/en-us/azure/app-service-web/app-service-linux-intro).
 
-## Components
+## Components or Requirements
 This Docker image contains the following components:
 
 1. Python **3.6.1**
@@ -23,7 +23,7 @@ The stack of components:
 Browser <-> nginx <-> /tmp/uwsgi.sock <-> uWSGI <-> Your Python app <-> Psycopg2 <-> remote PostgreSQL database
 ```
 
-## Features
+## Features or fuctionality
 This docker image enables you to:
 - run your Python app on **Azure Web App on Linux**;
 - connect you Python app to a remote PostgreSQL database;
@@ -32,7 +32,7 @@ This docker image enables you to:
         https://<your-site-name>.scm.azurewebsites.net/webssh/host
 ```
 
-## Predefined Nginx Locations
+## Predefined Nginx Locations (files)
 This docker image defines the following nginx locations for your static files.
 - /images
 - /css
@@ -54,7 +54,7 @@ This docker image also contains a uWSGI ini file for Django, which names uwsgi_d
 ## Startup Log
 The startup log file (**entrypoint.log**) is placed under the folder /home/LogFiles.
 
-## How to Deploy Django Project 
+## How to Deploy Django Project  (step wise execution) 
 1. login the instance via the url like below:
 ```
         https://<your-site-name>.scm.azurewebsites.net/webssh/host
